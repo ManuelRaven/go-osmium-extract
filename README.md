@@ -45,7 +45,7 @@ go mod download
 Um die Anwendung mit den Standardeinstellungen zu starten (herunterlädt Daten aus Mittelfranken):
 
 ```bash
-go run main.go
+go run --tags "fts5" main.go
 ```
 
 ### Verwendung mit benutzerdefinierten OSM-Daten
@@ -53,7 +53,7 @@ go run main.go
 Sie können eine benutzerdefinierte OSM-Datei angeben:
 
 ```bash
-go run main.go -url https://download.geofabrik.de/europe/germany/bayern-latest.osm.pbf
+go run --tags "fts5" main.go -url https://download.geofabrik.de/europe/germany/bayern-latest.osm.pbf
 ```
 
 ### Ausführbare Datei erstellen
@@ -61,7 +61,7 @@ go run main.go -url https://download.geofabrik.de/europe/germany/bayern-latest.o
 Sie können auch eine eigenständige ausführbare Datei erstellen:
 
 ```bash
-go build -o osm-extractor
+go build --tags "fts5" -o osm-extractor
 ./osm-extractor -url https://download.geofabrik.de/europe/germany-latest.osm.pbf
 ```
 

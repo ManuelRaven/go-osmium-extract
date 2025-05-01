@@ -1,0 +1,8 @@
+*.pbf
+*.geojson
+*.csv
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+out
